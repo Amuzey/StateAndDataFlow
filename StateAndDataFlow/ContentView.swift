@@ -24,6 +24,8 @@ struct ContentView: View {
             ButtonView(timer: timer)
             
             Spacer()
+            
+            LogOutBouttonView()
         }
     }
 }
