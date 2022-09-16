@@ -36,7 +36,9 @@ struct RegisterView: View {
     private func registerUser() {
         if name.count > 2 {
             user.name = name
+            UserDefaults.standard.set(user.name, forKey: "UserNameKey")
             user.isRegister.toggle()
+            UserDefaults.standard.set(user.isRegister, forKey: "RegisterKey")
         }
     }
 }

@@ -26,6 +26,7 @@ struct LogOutBouttonView: View {
     
     private func logOut() {
         user.isRegister.toggle()
+        UserDefaults.standard.set(user.isRegister, forKey: "RegisterKey")
     }
 }
 
