@@ -26,7 +26,6 @@ struct LogOutBouttonView: View {
     
     private func logOut() {
         user.isRegister.toggle()
-        print(user.isRegister)
     }
 }
 
