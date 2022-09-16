@@ -27,13 +27,14 @@ struct RegisterView: View {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
                 }
+                .disabled(name.count < 3)
             }
         }
         .padding()
     }
     
     private func registerUser() {
-        if !name.isEmpty {
+        if name.count > 2 {
             user.name = name
             user.isRegister.toggle()
         }
